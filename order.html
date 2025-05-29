@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Request</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/w3.css" />
+</head>
+
+<body class="w3-light-grey w3-padding">
+
+  <div class="w3-container w3-white w3-padding w3-card-4" style="max-width:600px; margin:auto; margin-top:50px;">
+    <h2 class="w3-center">Request Site</h2>
+
+    <form id="order-form" class="w3-container" onsubmit="return sendEmail()">
+      <label>Write your full request here(and the Type of template you chose):</label>
+      <textarea id="order-text" class="w3-input w3-border w3-margin-bottom" rows="8" required></textarea>
+
+      <button type="submit" class="w3-button w3-green w3-block">Send Request</button>
+    </form>
+  </div>
+
+  <script>
+    function sendEmail() {
+      const orderText = document.getElementById("order-text").value.trim();
+      if (!orderText) {
+        alert("Please write your request before sending.");
+        return false;
+      }
+
+      const email = "mohd@ieee.org";
+      const subject = encodeURIComponent("New Site Request");
+      const body = encodeURIComponent(orderText);
+
+      const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
+
+      window.location.href = mailtoLink;
+
+      return false; 
+    }
+  </script>
+
+</body>
+
+</html>

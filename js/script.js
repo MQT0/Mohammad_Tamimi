@@ -29,17 +29,17 @@ function setDevice(device) {
     case 'mobile':
       width = 375;
       height = 667;
-      label = '📱 Mobile - 375x667';
+      label = 'Mobile - 375x667';
       break;
     case 'tablet':
       width = 768;
       height = 1024;
-      label = '💊 Tablet - 768x1024';
+      label = 'Tablet - 768x1024';
       break;
     case 'desktop':
       width = 1280;
       height = 800;
-      label = '🖥️ Desktop - 1280x800';
+      label = 'Desktop - 1280x800';
       break;
     case 'resizable':
       width = '100%';
