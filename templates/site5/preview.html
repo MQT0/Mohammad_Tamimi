@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Template Preview</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <script src="js/script.js"></script>
+
+  <style>
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 10px;
+      background: white;
+    }
+
+    .device-frame {
+      background: #111;
+      padding: 16px;
+      border-radius: 30px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+      margin: auto;
+      max-width: 100%;
+      transition: all 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      .button {
+        display: none;
+      }
+
+      .menu {
+        display: inline-block;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .menu {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="w3-light-grey w3-display-container">
+  <div id="device-warning" class="w3-panel w3-orange w3-center w3-padding w3-hide">
+    <span id="warning-text">Please enable "Desktop Site" from your browser for a better experience.</span>
+    <button class="w3-button w3-small w3-right w3-orange w3-hover-red" onclick="hideWarning()">✖</button>
+  </div>
+
+  <header class="w3-blue w3-container">
+
+    <button class="w3-button w3-blue w3-xlarge menu w3-left" onclick="w3_open()" id="menubutton">☰</button>
+
+    <div class="w3-right">
+      <button onclick="setDevice('mobile')"
+        class="w3-button w3-blue w3-hover-light-grey w3-hover-text-blue button w3-large w3-bar-item">📱
+        Mobile</button>
+      <button onclick="setDevice('tablet')"
+        class="w3-button w3-blue w3-hover-light-grey w3-hover-text-blue button w3-large w3-bar-item">💊
+        Tablet</button>
+      <button onclick="setDevice('desktop')"
+        class="w3-button w3-blue w3-hover-light-grey w3-hover-text-blue button w3-large w3-bar-item">🖥️
+        Desktop</button>
+      <button onclick="setDevice('resizable')"
+        class="w3-button w3-blue w3-hover-light-grey w3-hover-text-blue button w3-large w3-bar-item">🔧 Custom
+        Size</button>
+    </div>
+  </header>
+
+  <nav class="w3-sidebar w3-bar-block w3-animate-left w3-light-grey" style="display:none" id="menu">
+    <button onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-blue w3-hover-light-grey w3-hover-text-blue">✖
+      Close</button>
+    <button onclick="setDevice('mobile')"
+      class="w3-button w3-blue w3-hover-light-grey w3-hover-text-blue button w3-large w3-bar-item">📱 Mobile</button>
+    <button onclick="setDevice('tablet')"
+      class="w3-button w3-blue w3-hover-light-grey w3-hover-text-blue button w3-large w3-bar-item">💊 Tablet</button>
+    <button onclick="setDevice('desktop')"
+      class="w3-button w3-blue w3-hover-light-grey w3-hover-text-blue button w3-large w3-bar-item">🖥️ Desktop</button>
+    <button onclick="setDevice('resizable')"
+      class="w3-button w3-blue w3-hover-light-grey w3-hover-text-blue button w3-large w3-bar-item">🔧 Custom
+      Size</button>
+  </nav>
+
+  <main class="w3-container w3-padding-16">
+    <h2 class="w3-center">📱 Template Preview on Different Devices</h2>
+
+    <div id="device-info" class="w3-center w3-margin-bottom w3-large">📱 Mobile - 375x667</div>
+
+    <div class="w3-center">
+      <div class="device-frame" id="frame-wrapper" style="width: 375px; height: 667px;">
+        <iframe id="preview-frame" src=""></iframe>
+      </div>
+    </div>
+  </main>
+
+  <footer class="w3-container w3-blue w3-center w3-padding w3-display-bottom">
+    <h5>&copy; 2025 MQT- All Rights Reserved</h5>
+  </footer>
+
+  <script>
+    function w3_open() {
+      document.getElementById("menu").style.display = "inline-block";
+      document.getElementById("menubutton").style.display = "none";
+    }
+
+    function w3_close() {
+      document.getElementById("menu").style.display = "none";
+      document.getElementById("menubutton").style.display = "inline-block";
+    }
+  </script>
+</body>
+
+</html>

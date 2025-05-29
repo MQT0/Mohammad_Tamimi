@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Blog</title>
+  <link rel="stylesheet" href="css/w3.css" />
+  <style>
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-family: 'Georgia', serif;
+  background: #fffde7;
+}
+
+header {
+  background: #f9a825;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+main {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+@media (max-width: 999px) {
+  main {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+@media (max-width: 769px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 376px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+.post {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.1);
+}
+
+.post h3 {
+  margin-top: 0;
+  color: #f57f17;
+}
+
+.post p {
+  color: #444;
+}
+
+footer {
+  background: #f9a825;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>✍️ Mohammed Al-Tamimi Blog</h2>
+  <p>Experiences in Web & App Development</p>
+</header>
+
+<main>
+  <div class="post">
+    <h3>Building Responsive Websites</h3>
+    <p>Creating websites that adapt to all screen sizes isn't just a trend — it's essential. Here's how I approach responsive design using HTML, CSS, and JavaScript...</p>
+  </div>
+  <div class="post">
+    <h3>My First Android App with Kotlin</h3>
+    <p>Diving into mobile development was both challenging and rewarding. In this post, I share my experience building a basic Android app using Kotlin...</p>
+  </div>
+  <div class="post">
+    <h3>Why I Love Front-End Development</h3>
+    <p>There’s something magical about bringing a design to life. From layout to interactivity, front-end development lets me merge creativity with code...</p>
+  </div>
+</main>
+
+<footer>
+  <p> &copy; 2025 Mohammed Al-Tamimi Blog – All rights reserved</p>
+</footer>
+
+
+</body>
+</html>

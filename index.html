@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Website Templates Marketplace</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/w3.css">
+  <style>
+    .w3-card-4 p {
+      min-height: 70px;
+    }
+
+    @media (max-width: 768px) {
+      .button {
+        display: none;
+      }
+
+      .menu {
+        display: inline-block;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .menu {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="w3-light-grey w3-display-container">
+
+  <header class="w3-blue w3-container">
+
+    <button class="w3-button w3-blue w3-xlarge menu w3-left" onclick="w3_open()" id="menubutton">☰</button>
+
+    <div class="w3-right">
+      <a href="contact.html"
+        class="w3-button w3-blue w3-hover-light-grey w3-hover-text-blue button w3-large w3-bar-item">
+        Contact
+      </a>
+      <a href="about.html" class="w3-button w3-blue w3-hover-light-grey w3-hover-text-blue button w3-large w3-bar-item">
+        About Us</a>
+      <a href="index.html" class="w3-button w3-blue w3-hover-light-grey w3-hover-text-blue button w3-large w3-bar-item">
+        Home</a>
+    </div>
+  </header>
+  <nav class="w3-sidebar w3-bar-block w3-animate-left w3-light-grey" style="display:none" id="menu">
+    <button onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-blue w3-hover-light-grey w3-hover-text-blue">✖
+      Close</button>
+    <a href="index.html" class="w3-bar-item w3-button w3-blue w3-hover-light-grey w3-hover-text-blue">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-blue w3-hover-light-grey w3-hover-text-blue">About Us</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-blue w3-hover-light-grey w3-hover-text-blue">Contact</a>
+  </nav>
+
+
+  <main class="w3-container w3-padding-16">
+    <div class="w3-row-padding">
+
+      <div class="w3-col s12 m6 l4 w3-margin-bottom">
+        <div class="w3-card-4 w3-round-large">
+          <header class="w3-container w3-teal w3-round-large">
+            <h4>Business Template</h4>
+          </header>
+          <div class="w3-container">
+            <p>Perfect for corporate and service websites.</p>
+            <a href="preview.html?site=site1"
+              class="w3-button w3-block w3-blue w3-margin-bottom w3-round-large">Preview</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-col s12 m6 l4 w3-margin-bottom">
+        <div class="w3-card-4 w3-round-large">
+          <header class="w3-container w3-teal w3-round-large">
+            <h4>Personal Template</h4>
+          </header>
+          <div class="w3-container">
+            <p>Great for portfolios and resumes.</p>
+            <a href="preview.html?site=site2"
+              class="w3-button w3-block w3-blue w3-margin-bottom w3-round-large">Preview</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-col s12 m6 l4 w3-margin-bottom">
+        <div class="w3-card-4 w3-round-large">
+          <header class="w3-container w3-teal w3-round-large">
+            <h4>eCommerce Template</h4>
+          </header>
+          <div class="w3-container">
+            <p>Ideal for small online stores and product showcases.</p>
+            <a href="preview.html?site=site3"
+              class="w3-button w3-block w3-blue w3-margin-bottom w3-round-large">Preview</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-col s12 m6 l4 w3-margin-bottom">
+        <div class="w3-card-4 w3-round-large">
+          <header class="w3-container w3-teal w3-round-large">
+            <h4>Blog Template</h4>
+          </header>
+          <div class="w3-container">
+            <p>Clean layout for writers, news, and personal blogging.</p>
+            <a href="preview.html?site=site4"
+              class="w3-button w3-block w3-blue w3-margin-bottom w3-round-large">Preview</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-col s12 m6 l4 w3-margin-bottom">
+        <div class="w3-card-4 w3-round-large">
+          <header class="w3-container w3-teal w3-round-large">
+            <h4>market site Template</h4>
+          </header>
+          <div class="w3-container">
+            <p>MQT online stores for website Templates.</p>
+            <a href="preview.html?site=site5"
+              class="w3-button w3-block w3-blue w3-margin-bottom w3-round-large">Preview</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="w3-container w3-blue w3-center w3-padding w3-display-bottom">
+    <div class="w3-col s12 m6 l4 w3-margin-bottom">
+      <ul class="w3-ul">
+        <li><a></a></li>
+        <li><a></a></li>
+        <li><a></a></li>
+      </ul>
+    </div>
+    <div class="w3-col s12 m6 l4 w3-margin-bottom">
+      <ul class="w3-ul">
+        <li><a href="index.html" class="w3-bar-item w3-button w3-blue w3-hover-light-grey w3-hover-text-blue">Home</a>
+        </li>
+        <li><a href="about.html" class="w3-bar-item w3-button w3-blue w3-hover-light-grey w3-hover-text-blue">About
+            Us</a></li>
+        <li><a href="contact.html"
+            class="w3-bar-item w3-button w3-blue w3-hover-light-grey w3-hover-text-blue">Contact</a></li>
+      </ul>
+    </div>
+    <h4>&copy; 2025 MQT- All Rights Reserved</h4>
+  </footer>
+  <script>
+    function w3_open() {
+      document.getElementById("menu").style.display = "inline-block";
+      document.getElementById("menubutton").style.display = "none";
+    }
+
+    function w3_close() {
+      document.getElementById("menu").style.display = "none";
+      document.getElementById("menubutton").style.display = "inline-block";
+    }
+
+  </script>
+
+</body>
+
+</html>
