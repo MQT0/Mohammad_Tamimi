@@ -7,8 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/w3.css">
   <style>
-    .w3-card-4 p {
+    .card .w3-card-4 p {
       min-height: 70px;
+    }
+
+    .cardd .w3-card-4 h4 {
+      min-height: 150px;
     }
 
     @media (max-width: 768px) {
@@ -25,6 +29,18 @@
       .menu {
         display: none !important;
       }
+    }
+
+    @media (max-width: 320px) {
+      .small {
+        font-size: small;
+      }
+
+    }
+
+    .contact {
+      color: #f3e5f5;
+      display: contents;
     }
   </style>
 </head>
@@ -55,9 +71,43 @@
   </nav>
 
 
-  <main class="w3-container w3-padding-16">
-    <div class="w3-row-padding">
+  <main class="w3-container w3-padding-16 w3-main w3-mobile">
 
+    <div class="w3-row-padding cardd">
+      <div class="w3-col s12 m6 l4 w3-margin-bottom">
+        <div class="w3-container w3-teal w3-round-large w3-card-4">
+          <h4 class="w3-center">To ensure proper preview display on mobile, switch your browser to desktop view mode.
+          </h4>
+          <div class="w3-container w3-white w3-round-large w3-margin-bottom">
+            <img src="smartphone_186248.png" class="w3-image w3-padding-large w3-mobile">
+          </div>
+        </div>
+      </div>
+      <div class="w3-col s12 m6 l4 w3-margin-bottom">
+        <div class="w3-container w3-teal w3-round-large w3-card-4">
+          <h4 class="w3-center">For tablet users, enabling desktop mode is recommended to optimize layout and preview
+            rendering.</h4>
+          <div class="w3-container w3-white w3-round-large w3-margin-bottom">
+
+            <img src="application_8004660.png" class="w3-image w3-padding-large w3-mobile">
+          </div>
+        </div>
+      </div>
+      <div class="w3-col s12 m6 l4 w3-margin-bottom">
+        <div class="w3-container w3-teal w3-round-large w3-card-4">
+          <h4 class="w3-center">If you're using a laptop and the layout appears cropped, press Ctrl and - to zoom out
+            for full visibility.
+          </h4>
+          <div class="w3-container w3-white w3-round-large w3-margin-bottom">
+
+            <img src="laptop_12818412.png" class="w3-image w3-padding-large w3-mobile">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-blue w3-container w3-margin-bottom w3-padding-small"></div>
+    <div class="w3-row-padding card">
       <div class="w3-col s12 m6 l4 w3-margin-bottom">
         <div class="w3-card-4 w3-round-large">
           <header class="w3-container w3-teal w3-round-large">
@@ -125,26 +175,51 @@
     </div>
   </main>
 
-  <footer class="w3-container w3-blue w3-center w3-padding w3-display-bottom">
-    <div class="w3-col s12 m6 l4 w3-margin-bottom">
+  <footer class="w3-container w3-blue w3-padding w3-display-bottom w3-mobile">
+    <div class="w3-col s12 m6 l4 w3-mobile">
       <ul class="w3-ul">
-        <li><a></a></li>
-        <li><a></a></li>
-        <li><a></a></li>
-      </ul>
-    </div>
-    <div class="w3-col s12 m6 l4 w3-margin-bottom">
-      <ul class="w3-ul">
-        <li><a href="index.html" class="w3-bar-item w3-button w3-blue w3-hover-light-grey w3-hover-text-blue">Home</a>
+        <li><a href="index.html"
+            class="w3-button w3-blue w3-hover-light-grey w3-hover-text-blue w3-margin-bottom w3-mobile">Home</a>
         </li>
-        <li><a href="about.html" class="w3-bar-item w3-button w3-blue w3-hover-light-grey w3-hover-text-blue">About
+        <li><a href="about.html"
+            class="w3-button w3-blue w3-hover-light-grey w3-hover-text-blue w3-margin-bottom w3-mobile">About
             Us</a></li>
         <li><a href="contact.html"
-            class="w3-bar-item w3-button w3-blue w3-hover-light-grey w3-hover-text-blue">Contact</a></li>
+            class="w3-button w3-blue w3-hover-light-grey w3-hover-text-blue w3-margin-bottom w3-mobile">Contact</a></li>
       </ul>
     </div>
-    <h4>&copy; 2025 MQT- All Rights Reserved</h4>
+    <div class="w3-col s12 m6 l4 w3-margin-bottom w3-mobile">
+      <ul class="w3-ul">
+        <li>
+          <a class="w3-button w3-hover-light-grey w3-hover-text-blue w3-margin-bottom w3-mobile small">Developed by
+            Mohammed Al-Tamimi</a>
+        </li>
+        <li><a href="mailto:mohd@ieee.org"
+            class="w3-button w3-blue w3-hover-light-grey w3-hover-text-blue w3-margin-bottom w3-mobile">mohd@ieee.org</a>
+        </li>
+        <li><a href="https://github.com/MQT0/Mohammad_Tamimi"
+            class="w3-button w3-blue w3-hover-light-grey w3-hover-text-blue w3-margin-bottom w3-mobile">Github</a></li>
+      </ul>
+    </div>
+    <div class="w3-col s12 m6 l4 w3-margin-bottom w3-mobile">
+      <ul class="w3-ul">
+        <li>
+          <a href="https://www.linkedin.com/in/mohammad-tamimi-04a5082bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            class="w3-button w3-hover-light-grey w3-hover-text-blue w3-margin-bottom w3-mobile">LinkedIn</a>
+        </li>
+        <li><a href="https://www.facebook.com/share/1FA92mvwDf/"
+            class="w3-button w3-blue w3-hover-light-grey w3-hover-text-blue w3-margin-bottom w3-mobile">Facebook</a>
+        </li>
+        <li><a href="https://www.instagram.com/ta._.mohammad?igsh=N3c1cW9mMWg2bDJk"
+            class="w3-button w3-blue w3-hover-light-grey w3-hover-text-blue w3-margin-bottom w3-mobile">Instagram</a>
+        </li>
+      </ul>
+    </div>
   </footer>
+  <div class="w3-container w3-blue w3-padding w3-display-bottom w3-center w3-mobile">
+    <h4>&copy; 2025 MQT- All Rights Reserved</h4>
+  </div>
+
   <script>
     function w3_open() {
       document.getElementById("menu").style.display = "inline-block";
